@@ -12,7 +12,7 @@ export default function MovieInfo(){
             <div className={'full-info'}>
                 <h1 className={'full-title'}>{movie.title}</h1>
                 <section className={'description'}>
-                    <img className={'full-img'} src={movie.poster}/>
+                    <img alt={'movie poster'} className={'full-img'} src={movie.poster}/>
                     <ul>
                         <li><b>Actors: </b> {movie.actors.join(', ')}</li>
                         <li><b>Genres:  </b>{movie.genre.join(", ")}</li>
@@ -23,7 +23,7 @@ export default function MovieInfo(){
                     </ul>
                 </section>
                 <h2 className={'trailer-title'}>Watch trailer:</h2>
-                <iframe className={'movie-trailer'} src={movie.trailer}></iframe>
+                <iframe title={movie.id} className={'movie-trailer'} src={movie.trailer}></iframe>
             </div>
         </>
     )

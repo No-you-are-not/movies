@@ -17,7 +17,6 @@ export default function Modal({open, movie, setOpenModal, occupied}){
             setSelected([ ...selected, index])
         }
     }
-    console.log(selected)
     function closeModal(){
         setOpenModal(false);
         setSelected([])

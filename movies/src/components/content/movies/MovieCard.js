@@ -5,7 +5,7 @@ export default function MovieCard({movie}){
     return(
         <div key={movie.id} className={'movie-card'}>
             <h2 className={'movie-title'}>{movie.title}</h2>
-            <img className={'movie-img'} src={movie.poster}/>
+            <img alt={'movie poster'} className={'movie-img'} src={movie.poster}/>
             <div>Genres: {genres}</div>
         </div>
     )
