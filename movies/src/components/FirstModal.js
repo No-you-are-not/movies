@@ -25,8 +25,8 @@ export default function FirstModal(){
             <div className={'overlay'}/>
             <div className={'user-info-modal'}>
                 <div className={'user-modal-title'}>Please, fill in the fields down below</div>
-                <div>Username: <input required value={username} onChange={usernameF}/></div>
-                <div>E-mail: <input required value={email} onChange={emailF}/></div>
+                <div><input placeholder={'Enter your username...'} required value={username} onChange={usernameF}/></div>
+                <div><input placeholder={'Enter your email...'} required value={email} onChange={emailF}/></div>
                 <div className={'user-modal-btn'}><button onClick={submitForm}>Submit</button></div>
             </div>
         </>,
