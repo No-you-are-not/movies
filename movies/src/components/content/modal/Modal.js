@@ -29,6 +29,18 @@ export default function Modal({open, movie, setOpenModal, occupied}){
         setCheckout(false);
         setOpenModal(false);
     }
+    if (ischeckout && selected.length < 1){
+        return ReactDom.createPortal(
+            <>
+                <div className={'overlay'}/>
+                <div className={'checkout-container'}>
+                    <div>Please select any seats</div>
+                    <div><button onClick={checkoutSetters} className={'checkout-btn'}>OK</button></div>
+                </div>
+            </>,
+            document.getElementById('portal')
+        )
+    }
     if (ischeckout){
         return ReactDom.createPortal(
             <>
