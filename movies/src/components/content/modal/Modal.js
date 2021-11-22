@@ -13,6 +13,9 @@ export default function Modal({open, movie, setOpenModal, occupied}){
         if (selected.includes(index)){
             setSelected([ ...selected.filter((item) => item !== index)])
         }
+        else if(occupied.includes(index)){
+            setSelected([ ...selected])
+        }
         else {
             setSelected([ ...selected, index])
         }
@@ -62,7 +65,7 @@ export default function Modal({open, movie, setOpenModal, occupied}){
         ids.push(i);
     }
     let seats = ids.map((seat, index) => {
-        return <div onClick={() => setSelectedSeats(index)} key={index} className={selected.includes(index) ? 'modal-seat selected' : occupied.includes(index) ? 'modal-seat occupied' : 'modal-seat'}>{index}</div>
+        return <div onClick={() => setSelectedSeats(index)} key={index} className={selected.includes(index) && !occupied.includes(index) ? 'modal-seat selected' : occupied.includes(index) ? 'modal-seat occupied' : 'modal-seat'}>{index}</div>
     });
     if (!open) return null;
     return ReactDom.createPortal(
