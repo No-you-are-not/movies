@@ -77,3 +77,5 @@
 * redux
 * html
 * css
+
+List of movies that were used can be found [here](https://trevadim.github.io/data/movies.json) 
