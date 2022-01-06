@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    all: unset;
+}
+
+body{
+    background-color: #012a4a;
+    color: white;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header{
+    background-color: #013a63;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 20px;
+    box-shadow: 0 0 10px #011728;
+}
+
+.main-content{
+    margin-left: 350px;
+
+}
+
+.title{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.user-img{
+    width: 60px;
+    height: 60px;
+}
+
+.navigation{
+    position: fixed;
+    left: 0;
+    background-color: #013a63;
+    margin-top: 120px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px #011728;
+}
+
+.option{
+    height: 150px;
+    line-height: 130px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.option:hover{
+    transform: scale(1.1);
+}
+
+.selected-option{
+    text-decoration: underline;
+}
+
+.divider{
+    border: 1px solid #011728;
+    width: 280px;
+    margin-left: 10px;
+}
+
+.movie-img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin: 7px 7px 15px;
+}
+
+.movie-card{
+    cursor: pointer;
+    box-shadow: 0 0 10px #011728;
+    background-color: #013a63;
+    width: 300px;
+    min-height: 500px;
+    text-align: center;
+    margin: 0 60px 40px;
+    padding: 20px 10px;
+    transition: 0.3s ease-in;
+}
+
+.movie-card:hover{
+    transform: scale(1.1);
+}
+
+.movie-title{
+    height: 60px;
+}
+
+.movies-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0 60px;
+    margin: 50px auto 30px;
+}
+
+.schedule-container{
+    padding: 0 60px;
+    margin: 50px auto 30px;
+}
+
+.schedule-table{
+    padding: 0 10px;
+    background-color: #013a63;
+    box-shadow: 0 0 10px #011728;
+    width: 100%;
+    border: 1px solid #011728;
+}
+
+.schedule-table td, th{
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.schedule-table td:not(:first-child){
+    text-align: center;
+}
+
+.schedule-table td:first-child{
+   padding-left: 30px;
+}
+
+table, td:not(:last-child) {
+    border: 1px solid #011728;
+}
+
+.select-btn{
+    box-shadow: 0 0 10px #011728;
+    border-radius: 5px;
+    width: 90%;
+    transition: 0.2s ease-in;
+}
+
+.select-btn:hover{
+    transform: scale(1.05);
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 3px 10px;
+}
+
+.btn-cell{
+    width: 140px;
+}
+
+.full-info{
+    background-color: #013a63;
+    box-shadow: 0 0 10px #011728;
+    width: 90%;
+    min-height: 700px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.full-img{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 35px;
+}
+
+ul{
+    text-align: left;
+    padding: 20px;
+}
+li{
+    margin-top: 15px;
+}
+
+.description{
+    display: flex;
+}
+
+.movie-trailer{
+    margin: 30px auto 40px;
+    width: 700px;
+    height: 400px;
+}
+
+.trailer-title{
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.back-btn{
+    box-shadow: 0 0 10px #011728;
+    width: 100px;
+    height: 30px;
+    position: fixed;
+    top: 180px;
+    background-color: #013a63;
+    border-radius: 5px;
+    left: 315px;
+    transition: 0.2s ease-in;
+}
+
+.back-btn:hover{
+    transform: scale(1.1);
+}
+
+.movie-select{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.input-search{
+    padding: 0 10px;
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+
+.choices{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    margin-left: 120px;
+}
+
+.btn-search{
+    background-color: #013a63;
+    height: 40px;
+    width: 70px;
+}
+
+.date-select{
+    margin-left: 40%;
+    margin-top: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 10px 10px 0;
+    width: 200px;
+}
+
+.no-sessions-title{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+
+.modal-container{
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 700px;
+    min-height: 500px;
+    background-color: #013a63;
+    outline: 1px solid white;
+    text-align: center;
+    font-size: 25px;
+    z-index: 1001;
+}
+
+.modal-seats{
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    grid-gap: 10px;
+    margin: 30px auto 20px;
+    justify-content: center;
+}
+
+.modal-seat{
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.modal-seat:hover{
+    transform: scale(1.1);
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.3s ease-in;
+    padding: 5px;
+}
+
+.modal-close-btn:hover{
+    transform: scale(1.2);
+}
+
+.modal-movie-info div{
+    margin: 7px;
+}
+
+.seat-example{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.seats-types, .seats-types div{
+    display: flex;
+    justify-content: center;
+}
+.seats-types div{
+    line-height: 30px;
+    margin: 0px 15px 0;
+}
+
+.select-seats{
+    margin: 15px;
+}
+
+.occupied{
+    background-color: #2c7da0;
+}
+
+.selected{
+background-color: #a9d6e5;
+}
+
+.checkout-btn{
+    box-shadow: 0 0 10px #011728;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 20px auto 0;
+    transition:  0.3s ease-in;
+}
+
+.checkout-btn:hover{
+    transform: scale(1.2);
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+}
+
+.checkout-container{
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 700px;
+    min-height: 200px;
+    background-color: #013a63;
+    outline: 1px solid white;
+    text-align: center;
+    font-size: 25px;
+    z-index: 1001;
+}
+
+.user-info-modal{
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 700px;
+    min-height: 200px;
+    background-color: #013a63;
+    outline: 1px solid white;
+    font-size: 25px;
+    z-index: 1001;
+    text-align: center;
+}
+
+.user-info-modal input{
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    width: 400px;
+    color: black;
+    padding: 0 5px;
+    text-align: left;
+}
+
+.user-info-modal div{
+    margin: 15px auto;
+}
+
+.user-modal-btn button{
+    box-shadow: 0 0 10px #011728;
+    padding: 10px;
+    border-radius: 7px;
+    transition:  0.3s ease-in;
+}
+
+.user-modal-btn button:hover{
+    transform: scale(1.2);
+}
+
+.user-name{
+    text-align: center;
+}
+
+.checkout-container div{
+    margin: 20px auto;
+}
