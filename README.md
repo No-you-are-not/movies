@@ -1,7 +1,11 @@
 # Web page for movie theatre
 
 ### Functionality that was created:
-* filling the modal form with name and email that will be used later
+* the modal form to fill name and email that will be used later is shown on first enter
+
+![image](https://user-images.githubusercontent.com/74618788/148388085-5125556a-9e3b-4c13-926e-4ffe62e94690.png)
+
+
 * ability to see movies that are available in current movie theatre
 * user sees basic information about all the movies but can see details by clicking on certain movie card 
 * user can navigate through two pages: "movies list" and "schedule"
