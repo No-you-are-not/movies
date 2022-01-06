@@ -31,11 +31,43 @@
 
 
 * after selecting certain movie, user sees modal window with information about choosen session and available seats
+
+![image](https://user-images.githubusercontent.com/74618788/148388858-59591d95-59ee-44b0-bdee-e6584835894b.png)
+
 * user can choose desired seat by clicking on it and seat will be available again after second click
+
+![image](https://user-images.githubusercontent.com/74618788/148388806-ee5dea9c-e238-40a6-9239-158845edb6a6.png)
+
+
 * user can't choose seats that are already taken
 * taken seats are setted randomly on every session
+
+![image](https://user-images.githubusercontent.com/74618788/148388910-c544d13a-029a-4c1f-bc9a-9ccd427b9033.png)
+
+
 * after checkout uses sees messeage that tickets were sent on the email that was given by user on the firs step
+
+![image](https://user-images.githubusercontent.com/74618788/148389010-ff4f5e21-6b47-40b8-b59c-006b8f1dd3d7.png)
+
+
 * if no seats were selected, user sees message with suggestion to choose seats
+
+![image](https://user-images.githubusercontent.com/74618788/148389063-63c9c2f0-346e-4bae-9f47-0ea11e827db0.png)
+
+* user can search through the movies by typing some words into search bar
+
+![image](https://user-images.githubusercontent.com/74618788/148389254-bb141685-9ccb-4543-9f38-d4b8d99e1646.png)
+
+
+* user can filter movies by genre
+
+![image](https://user-images.githubusercontent.com/74618788/148389423-fab5cdf4-4668-493a-907e-3c0ca703ee24.png)
+
+
+* user can combine those selectors
+
+![image](https://user-images.githubusercontent.com/74618788/148389375-e6e28413-003a-4d12-818c-ff799389cd19.png)
+
 
 ### Technology stack 
 * react js
