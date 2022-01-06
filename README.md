@@ -1,5 +1,7 @@
 # Web page for movie theatre
 
+![image](https://user-images.githubusercontent.com/74618788/148389565-3dafa7b0-4ecf-499c-9905-f59c0c77ef22.png)
+
 ### Functionality that was created:
 * the modal form to fill name and email that will be used later is shown on first enter
 
